@@ -48,7 +48,22 @@ function gradeFeedback(grade){
 function abs(number){
     return Math.sqrt(number * number)
 }
+
 // isEven
 function isEven (number){
-     
+    let array = [number]
+    array = JSON.stringify(array)
+    array = array.split("")
+    array.pop()
+    let x = array.pop()
+    if (x == 0 || x == 2 || x == 4 || x == 6 || x == 8){
+        return true
+    }   else {
+        return false
+    }
 }
+
+// is divisible by
+// function isDivisibleBy(number,divisor){
+//     if (number / divisor)
+// }
