@@ -64,6 +64,61 @@ function isEven (number){
 }
 
 // is divisible by
-// function isDivisibleBy(number,divisor){
-//     if (number / divisor)
+// works for isEven too 
+function isDivisibleBy(number,divisor){
+    let remainder = number % divisor
+    if (remainder > 0){
+        return false
+    }   else {
+        return true
+    }
+}
+
+// pointlocation
+function pointLocation (x, y){
+    if (x == 0 && y == 0){
+    return "origin"
+    }   else if (x != 0 && y == 0){
+        return "x axis"
+    }   else if (x == 0 && y != 0){
+        return "y axis"
+    }   else if (x > 0 && y > 0){
+        return "quadrant I"
+    }   else if (x < 0 && y > 0){
+        return "quadrant II"
+    }   else if (x < 0 && y < 0){
+        return "quadrant III"
+    }   else if (x > 0 && y < 0){
+        return "quadrant IV"
+    }
+}
+
+// Ordinal adjective
+function ordinalAdjective(number){
+array = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+if (number === 1){
+    return array[1] += "st" 
+}   else if (number === 2){
+    return array[2] += "nd"
+}   else if (number === 3){
+    return array[3] += "rd"
+}   else if (number >= 4){
+    return `${number}th`
+}
+// else if (number >= 4){
+//     return array[number] += "th"
 // }
+}
+
+// minPayment
+function minPayment(balance){
+    payment = balance * 0.021
+    if (payment >= 10){
+        return payment
+    }   else if (balance < 10) {
+        return balance
+    }   else {
+        return 10
+    }
+
+}
