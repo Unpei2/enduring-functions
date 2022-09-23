@@ -102,7 +102,9 @@ if (number === 1){
     return array[2] += "nd"
 }   else if (number === 3){
     return array[3] += "rd"
-}   else if (number >= 4){
+}   
+
+else if (number >= 4){
     return `${number}th`
 }
 // else if (number >= 4){
