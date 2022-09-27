@@ -14,6 +14,7 @@ function heronsFormula(a, b, c){
     s = (a + b + c) / 2
     return Math.sqrt(s * (s-a) * (s - b) * (s - c))
 }
+
 // height check
 function heightCheck(height){
     if (height >= 82){
@@ -22,6 +23,7 @@ function heightCheck(height){
         return "Too short for ride."
     }
 }
+
 // Analyze number
 function analyzeNumber(num){
     if (num > 0){
@@ -103,13 +105,12 @@ if (number === 1){
 }   else if (number === 3){
     return array[3] += "rd"
 }   
-
-else if (number >= 4){
-    return `${number}th`
-}
 // else if (number >= 4){
-//     return array[number] += "th"
+//     return `${number}th`
 // }
+    else if (number >= 4){
+    return array[number] += "th"
+}
 }
 
 // minPayment
@@ -122,5 +123,4 @@ function minPayment(balance){
     }   else {
         return 10
     }
-
 }
